@@ -4,9 +4,13 @@ public class Node {
 	int key;
 	String name;
 	String color;
-	Node leftNode;
-	Node rightNode;
+	Node leftNode = null;
+	Node rightNode = null;
 	
+	Node(){
+		this.key = 0;
+		this.color = "";
+	}
 	
 	Node(int incKey, String incColor) {
 		
@@ -15,7 +19,7 @@ public class Node {
 	}
 	
 	public String getString() {
-		return "color of the node is:" + color + "; it has the key: " + key;
+		return "color of the node is:" + color + "; its key is: " + key;
 	}
 
 }
